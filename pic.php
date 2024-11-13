@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +7,12 @@
     <title>Picture</title>
     <script>
         function processImage() {
-            const photoSize = document.getElementById('photoSize').value;
-            const borderColor = document.getElementById('colorPicker').value;
-            const image = document.getElementById('editableImage');
+            const photoSize = document.getElementById("photoSize").value;
+            const borderColor = document.getElementById("colorPicker").value;
+            const image = document.getElementById("editableImage");
 
-            image.style.width = photoSize + 'px'; 
-            image.style.height = 'auto'; 
-  
+            image.style.width = photoSize + "px"; 
+            image.style.height = "auto"; 
             image.style.border = `5px solid ${borderColor}`; 
         }
     </script>
@@ -38,4 +38,5 @@
         <img src="https://play-lh.googleusercontent.com/O8mvDQlw4AwmGfUrh4lviZD_PwwhRHz2etA25F77SbXrm3qEHOt2826aNkKar4D0yw" alt="Editable Image" id="editableImage" style="border: 5px solid transparent;">
     </div>
 </body>
-</html>
+</html>';
+?>

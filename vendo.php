@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,12 +30,11 @@
 
             <label for="quantity">Quantity:</label>
             <input type="number" id="quantity" name="quantity" min="1" value="1">
-            
 
             <button type="button" onclick="checkOut()">Check Out</button>
         </fieldset>
     </form>
-    
+
     <hr>
 
     <div id="purchaseSummary">
@@ -46,7 +46,7 @@
 
     <script>
         function checkOut() {
-            const selectedProducts = document.querySelectorAll('input[name="product"]:checked');
+            const selectedProducts = document.querySelectorAll(\'input[name="product"]:checked\');
             const sizeSelect = document.getElementById("size");
             const sizePrice = parseFloat(sizeSelect.value);
             const sizeLabel = sizeSelect.options[sizeSelect.selectedIndex].text;
@@ -81,4 +81,5 @@
         }
     </script>
 </body>
-</html>
+</html>';
+?>

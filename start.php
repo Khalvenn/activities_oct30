@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,4 +10,5 @@
     <a href="vendo.html">• Act 1</a><br>
     <a href="pic.html">• Act 2</a>
 </body>
-</html>
+</html>';
+?>
